@@ -9,7 +9,7 @@ function parseText(value, key){
         tt.push( value.charCodeAt( i ) ^ key )
     }
 
-    return tt.map( a => String.fromCharCode( a ) ).join("");
+    return tt.map( a => String.fromCharCode( a ) ).join(" ");
 }
 
 function codedecode() {
