@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 2em black;
+    padding: 5%;
+    border-radius: 1em;
+    background-color: rgba(23, 22, 22, 0.42);
+    gap: 0.4em;
+}
+
+label {
+    align-self: flex-start;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    padding: 0.5em;
+    font-size: larger;
+    border-radius: 0.6em;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.buttons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.4em;
+    gap: 0.4em;
+}
+
+
+button {
+    flex: 1;
+    appearance: none;
+    outline: none;
+    border: unset;
+    padding: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 1em #fff;
+}
+
+button:nth-child(1){
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    background-color: rgb(52, 209, 52);
+}
+
+button:nth-child(1):active {
+    background-color: rgb(19, 127, 19);
+}
+
+button:nth-child(2){
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: rgb(209, 76, 52);
+}
+
+button:nth-child(2):active {
+    background-color: rgb(119, 44, 31);
+}
